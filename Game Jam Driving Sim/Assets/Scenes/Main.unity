@@ -435,7 +435,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31132
+  m_Name: pb_Mesh25110
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1047,6 +1047,63 @@ MonoBehaviour:
   obstaclesToSpawn:
   - {fileID: 7625584886572430592, guid: ce0d9e0617002144988a30d1f51395c4, type: 3}
   safeDistance: 5
+--- !u!1001 &1965801324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.970413
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105476807654003464, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_Name
+      value: Road
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b25331e54825754449d10725cb7f43cb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1055,3 +1112,4 @@ SceneRoots:
   - {fileID: 249224543}
   - {fileID: 1695052501}
   - {fileID: 221537903}
+  - {fileID: 1965801324}
