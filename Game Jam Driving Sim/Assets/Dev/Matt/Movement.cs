@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Vector2 input;
     public float speed;
     public float turnSpeed;
+    private float currentYRotation; 
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,17 @@ public class Movement : MonoBehaviour
     {
         Vector3 move = movement();
         controller.Move(move * speed * Time.deltaTime);
-        transform.Rotate(Vector3.up, input.x * turnSpeed * Time.deltaTime);
+        if(input.x != 0)
+        {
+            currentYRotation += input.x * turnSpeed * Time.deltaTime;
+            currentYRotation = Mathf.Clamp(currentYRotation, -45, 45);
+            transform.rotation = Quaternion.Euler(0, currentYRotation, 0);
+        }
+        
     }
     public void OnMoveInput(InputAction.CallbackContext context)
     {
          input = context.ReadValue<Vector2>();
-       Debug.Log(input);
     }
 
     private Vector3 movement()
