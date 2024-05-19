@@ -1,26 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class S_CollisionOff : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
+    public GameObject manWalking;
+    public GameObject manRagdoll;
 
-    public bool collisionOff;
-    public GameObject collisionBox;
+    public bool hasHit;
+
     // Start is called before the first frame update
     void Start()
     {
-        collisionOff = true;
+        hasHit = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (collisionOff == false)
+        if (hasHit == true)
         {
-            
-            collisionBox.SetActive(false);
+            manWalking.SetActive(false);
+            manRagdoll.SetActive(true);
         }
     }
 
@@ -28,7 +29,7 @@ public class S_CollisionOff : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            collisionOff = false;
+            hasHit = true;
         }
     }
 }
