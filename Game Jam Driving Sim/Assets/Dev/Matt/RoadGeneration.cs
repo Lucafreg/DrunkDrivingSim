@@ -36,35 +36,27 @@ public class RoadGeneration : MonoBehaviour
 
             if(!positions.Contains(spawnPos))
             {
-                foreach(Vector3 pos in positions)
-                {
-                    if(Vector3.Distance(spawnPos,pos) < minDistanceBetweenObjects)
-                    {
-                        validPos = false;
-                        break;
-                        Debug.Log("Invalid Position");
-                    }
-
-                }
-
                 GameObject go = Instantiate(RoadObstacles[Random.Range(0, RoadObstacles.Length)], spawnPos, Quaternion.identity);
                 go.transform.SetParent(transform);
                 positions.Add(spawnPos);
             }
-            else
-            {
-                i--;
-            }
-           
+
             
         }
     }
 
     public Vector3 GeneratePosition()
     {
-        float xPos = Random.Range(transform.position.x - 1, transform.position.x + 1);
-        float zPos = Random.Range(transform.position.z, transform.position.z + 35);
-        Vector3 spawnPos = new Vector3(xPos, 0, zPos);
+        float xPos;
+        float zPos;
+        Vector3 spawnPos;
+        do
+        {
+            xPos = Random.Range(transform.position.x - 1, transform.position.x + 1);
+            zPos = Random.Range(transform.position.z, transform.position.z + 35);
+            spawnPos = new Vector3(xPos, 0, zPos);
+        } while (xPos < minDistanceBetweenObjects && zPos < minDistanceBetweenObjects);
+        
         return spawnPos;
     }
    

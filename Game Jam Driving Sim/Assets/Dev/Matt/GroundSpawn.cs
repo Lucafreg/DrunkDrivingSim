@@ -8,7 +8,7 @@ public class GroundSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      for(int i = 0; i < 3; i++)
+      for(int i = 0; i < 4; i++)
        {
         Spawn();
       }

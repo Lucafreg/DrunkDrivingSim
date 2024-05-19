@@ -121,7 +121,7 @@ MonoBehaviour:
   RoadObstacles:
   - {fileID: 3556987736455133963, guid: 28af2dad9ba705c4cbe1b186759cbbda, type: 3}
   - {fileID: 6377698145347334696, guid: 01688d6c5b91cad419483ac7c6a7335c, type: 3}
-  numberOfObstacles: 6
+  numberOfObstacles: 4
   minDistanceBetweenObjects: 2
   roadLength: 30
 --- !u!114 &3495897796401244490
@@ -155,8 +155,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 1.0703402, y: 0.14189816, z: 31.788101}
+  m_Size: {x: 10, y: 10, z: 9.212021}
+  m_Center: {x: 1.0703402, y: 0.14189816, z: 33.344486}
 --- !u!1001 &769128461145105576
 PrefabInstance:
   m_ObjectHideFlags: 0
