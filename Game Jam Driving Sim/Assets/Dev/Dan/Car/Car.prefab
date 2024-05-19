@@ -61,7 +61,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.8, y: 0, z: -0.8}
 --- !u!114 &742725870033823637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,8 +302,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.029191388, y: 0.12117846, z: 0.2505248}
-  m_Center: {x: 0.0045956518, y: -0.024915835, z: -0.103859074}
+  m_Size: {x: 0.029958636, y: 0.12117842, z: 0.25052473}
+  m_Center: {x: 0.0042120293, y: -0.024915833, z: -0.10385903}
 --- !u!65 &8835619217244085143
 BoxCollider:
   m_ObjectHideFlags: 0
