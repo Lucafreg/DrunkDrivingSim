@@ -15,14 +15,16 @@ public class UIManager : MonoBehaviour
     public GameObject PlayerHealthUI;
     public Slider PlayerHealthSlider;
     public GameObject MainMenuUI;
-    public GameObject PauseMenuUI, CreditsMenuUI;
+    public GameObject PauseMenuUI, CreditsMenuUI, LoseMenuUI;
     
+   
 
     public bool Resumed;
     private void Awake()
     {
         CreditsMenuUI.SetActive(false);
         PauseMenuUI.SetActive(false);
+        LoseMenuUI.SetActive(false);
     }
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class UIManager : MonoBehaviour
         //PlayerHealthSlider = PlayerHealthUI.GetComponent<Slider>();
         Resumed = true;
         MainMenuScene = 0;
-        GameScene = 1;
+        GameScene = 2;
     }
 
     // Update is called once per frame
@@ -50,6 +52,10 @@ public class UIManager : MonoBehaviour
             {
                 OnResume();
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnLose();
         }
     }
     public void OnPlay()
@@ -76,12 +82,20 @@ public class UIManager : MonoBehaviour
     {
         
         SceneManager.LoadScene(MainMenuScene);
+        Time.timeScale = 1f;
     }
     public void OnMainMenuCredits()
     {
         MainMenuUI.SetActive(true);
         CreditsMenuUI.SetActive(false);
     }
+    public void OnLose()
+    {
+        LoseMenuUI.SetActive(true);
+        Resumed = false;
+        
+    }
+    
     public void OnQuit()
     {
         Application.Quit();
