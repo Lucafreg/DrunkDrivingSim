@@ -75,6 +75,14 @@ public class UIManager : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }
+    public void OnRepair()
+    {
+        PlayerHealthSlider.value +=1 ;
+    }
+    public void OnSpeedboost()
+    {
+
+    }
     public void OnCredits()
     {
         CreditsMenuUI.SetActive(true);
