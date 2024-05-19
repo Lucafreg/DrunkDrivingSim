@@ -6,6 +6,8 @@ TagManager:
   tags:
   - UIManager
   - PlayerHealthUI
+  - Player score
+  - Player Money
   layers:
   - Default
   - TransparentFX
