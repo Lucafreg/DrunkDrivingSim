@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.UIElements;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UIManager : MonoBehaviour
     public GameObject UIMAnager;
     public int MainMenuScene,GameScene;
     public GameObject PlayerHealthUI;
-    public Slider PlayerHealthSlider;
+    public UnityEngine.UI.Slider PlayerHealthSlider;
     public GameObject MainMenuUI;
     public GameObject PauseMenuUI, CreditsMenuUI, LoseMenuUI;
     
@@ -31,10 +32,10 @@ public class UIManager : MonoBehaviour
     {
         UIMAnager = GameObject.FindGameObjectWithTag("UIManager");
         PlayerHealthUI = GameObject.FindGameObjectWithTag("PlayerHealthUI");
-        //PlayerHealthSlider = PlayerHealthUI.GetComponent<Slider>();
+        PlayerHealthSlider = PlayerHealthUI.GetComponent<UnityEngine.UI.Slider>();
         Resumed = true;
         MainMenuScene = 0;
-        GameScene = 2;
+        GameScene = 1;
     }
 
     // Update is called once per frame
@@ -53,7 +54,8 @@ public class UIManager : MonoBehaviour
                 OnResume();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+       
+        if(PlayerHealthSlider.value <= 0)
         {
             OnLose();
         }
