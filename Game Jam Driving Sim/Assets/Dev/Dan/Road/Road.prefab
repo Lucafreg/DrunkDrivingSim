@@ -121,6 +121,8 @@ MonoBehaviour:
   RoadObstacles:
   - {fileID: 3556987736455133963, guid: 28af2dad9ba705c4cbe1b186759cbbda, type: 3}
   - {fileID: 6377698145347334696, guid: 01688d6c5b91cad419483ac7c6a7335c, type: 3}
+  - {fileID: 2477783352563216053, guid: 2d74d4b8b4c104547bb9b65deedd811e, type: 3}
+  - {fileID: 9210745566962021459, guid: 69c8f810dfaf1974eb4e1cc6e147eaf5, type: 3}
   numberOfObstacles: 6
   minDistanceBetweenObjects: 2
   roadLength: 30

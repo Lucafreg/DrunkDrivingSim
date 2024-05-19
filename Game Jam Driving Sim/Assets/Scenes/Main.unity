@@ -162,17 +162,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 241617495111568191, guid: 6c63ca97653cef5408509f869849c514, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6189137697097670454, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_Name
       value: Car
-      objectReference: {fileID: 0}
-    - target: {fileID: 6189137697097670454, guid: 6c63ca97653cef5408509f869849c514, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8710705180453449185, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_LocalPosition.x
@@ -747,6 +739,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: numberOfObstacles
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: minDistanceBetweenObjects
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6066281758879554845, guid: b25331e54825754449d10725cb7f43cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
