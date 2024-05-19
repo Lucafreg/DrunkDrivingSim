@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7906911186121833834}
   - component: {fileID: 8348102711002623591}
   - component: {fileID: 5127181427238251572}
+  - component: {fileID: 6413851155504390228}
   m_Layer: 0
   m_Name: MaleFleece
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,6 +72,19 @@ MonoBehaviour:
   manWalking: {fileID: 5646582348624291903}
   manRagdoll: {fileID: 6841846846928500948}
   hasHit: 0
+--- !u!114 &6413851155504390228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477783352563216053}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46560ba96ae294d4ca5429740da67639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
 --- !u!1001 &2522627968809807692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +204,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!95 &2019154793072199929
 Animator:
