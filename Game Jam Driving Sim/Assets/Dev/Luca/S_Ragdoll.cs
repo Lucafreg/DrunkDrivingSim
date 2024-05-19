@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject manWalking;
     public GameObject manRagdoll;
-
+    
     public bool hasHit;
 
     // Start is called before the first frame update
@@ -30,6 +30,9 @@ public class NewBehaviourScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             hasHit = true;
+            
+               
+            
         }
     }
 }
