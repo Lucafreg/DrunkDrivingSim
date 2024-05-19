@@ -10,11 +10,16 @@ public class Movement : MonoBehaviour
     private Vector2 input;
     public float speed;
     public float turnSpeed;
-    private float currentYRotation; 
+    private float currentYRotation;
+    public float turnClamp;
+    private Quaternion initialRot;
+   
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        initialRot = transform.rotation;
+        currentYRotation = transform.eulerAngles.y;
     }
 
     // Update is called once per frame
@@ -22,13 +27,18 @@ public class Movement : MonoBehaviour
     {
         Vector3 move = movement();
         controller.Move(move * speed * Time.deltaTime);
-        if(input.x != 0)
-        {
+       
             currentYRotation += input.x * turnSpeed * Time.deltaTime;
-            currentYRotation = Mathf.Clamp(currentYRotation, -45, 45);
+            currentYRotation = Mathf.Clamp(currentYRotation, -turnClamp, turnClamp);
             transform.rotation = Quaternion.Euler(0, currentYRotation, 0);
-        }
+       
+      
+           
+
+          
+
         
+
     }
     public void OnMoveInput(InputAction.CallbackContext context)
     {
@@ -37,7 +47,7 @@ public class Movement : MonoBehaviour
 
     private Vector3 movement()
     {
-        Vector3 move = transform.right * input.x + transform.forward * speed;
+        Vector3 move = transform.forward * speed;
         move.y = 0;
         
         return move.normalized;
