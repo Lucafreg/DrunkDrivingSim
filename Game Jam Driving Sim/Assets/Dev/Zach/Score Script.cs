@@ -11,7 +11,10 @@ public class ScoreScript : MonoBehaviour
 
     [SerializeField]
     private MoneySO MoneySO;
-    
+    [SerializeField]
+    private SpeedSO SpeedSO;
+    [SerializeField]
+    private PlayerHealthSO playerhealthSO;
     private void Awake()
     {
         ScoreGO = GameObject.FindGameObjectWithTag("Player score");
@@ -38,6 +41,8 @@ public class ScoreScript : MonoBehaviour
         if (MoneySO.MyScore > 0)
         {
             MoneySO.MyScore -= 50;
+            SpeedSO.MySpeed += 1;
+            
         }
     }
     public void OnHealthUpgrade()
@@ -45,6 +50,7 @@ public class ScoreScript : MonoBehaviour
         if(MoneySO.MyScore > 0)
         {
         MoneySO.MyScore -= 100;
+            playerhealthSO.MyMaxHealth += 1;
         }
         
     }

@@ -21,6 +21,10 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private PlayerHealthSO playerhealthSO;
 
+    [SerializeField]
+    private SpeedSO speedSO;
+
+
 
     public bool Resumed;
     private void Awake()
@@ -67,6 +71,7 @@ public class UIManager : MonoBehaviour
         
         SceneManager.LoadScene(GameScene);
         playerhealthSO.MyCurrentHealth = playerhealthSO.MyMaxHealth;
+        Time.timeScale = 1f;
     }
     public void OnPause()
     {
@@ -106,7 +111,8 @@ public class UIManager : MonoBehaviour
     {
         LoseMenuUI.SetActive(true);
         Resumed = false;
-        
+        Time.timeScale = 0f;
+
     }
     
     public void OnQuit()
