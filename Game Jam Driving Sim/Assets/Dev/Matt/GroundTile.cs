@@ -21,5 +21,6 @@ public class GroundTile : MonoBehaviour
         if(other.CompareTag("Player"))
         groundSpawn.Spawn();
         Destroy(gameObject, 2);
+        Debug.Log("Destroyed Tile");
     }
 }
