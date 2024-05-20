@@ -7,6 +7,7 @@ public class Objecthitscript : MonoBehaviour
     public bool hasHit;
     [SerializeField]
     private PlayerHealthSO healthSO;
+    public AudioSource Hitsound;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -15,6 +16,7 @@ public class Objecthitscript : MonoBehaviour
             
             if (hasHit == false)
             {
+                Hitsound.Play();
                 healthSO.MyCurrentHealth -= 1;
                 hasHit = true;
             }
