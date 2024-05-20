@@ -619,7 +619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &471800121736209687
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4078,7 +4078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11747954, g: 0.21655512, b: 0.4528302, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4814,7 +4814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7823376691804687002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4859,7 +4859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11747954, g: 0.21655512, b: 0.4528302, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5101,7 +5101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2160171196217467602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5153,7 +5153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11747954, g: 0.21655512, b: 0.4528302, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6762,6 +6762,7 @@ MonoBehaviour:
   MainMenuScene: 0
   GameScene: 1
   PlayerHealthUI: {fileID: 3315932286399271999}
+  PlayerHealthSlider: {fileID: 0}
   MainMenuUI: {fileID: 5678943124717829879}
   PauseMenuUI: {fileID: 1581479101292951936}
   CreditsMenuUI: {fileID: 5827878008614407631}

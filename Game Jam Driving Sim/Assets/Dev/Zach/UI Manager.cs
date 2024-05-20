@@ -17,8 +17,10 @@ public class UIManager : MonoBehaviour
     public UnityEngine.UI.Slider PlayerHealthSlider;
     public GameObject MainMenuUI;
     public GameObject PauseMenuUI, CreditsMenuUI, LoseMenuUI;
-    
-   
+
+    [SerializeField]
+    private PlayerHealthSO playerhealthSO;
+
 
     public bool Resumed;
     private void Awake()
@@ -41,7 +43,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //PlayerHealthSlider.value = Playerhealth.playerHeath;
+        PlayerHealthSlider.value = playerhealthSO.MyCurrentHealth;
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -64,6 +66,7 @@ public class UIManager : MonoBehaviour
     {
         
         SceneManager.LoadScene(GameScene);
+        playerhealthSO.MyCurrentHealth = playerhealthSO.MyMaxHealth;
     }
     public void OnPause()
     {
@@ -77,7 +80,7 @@ public class UIManager : MonoBehaviour
     }
     public void OnRepair()
     {
-        PlayerHealthSlider.value +=1 ;
+        playerhealthSO.MyCurrentHealth+=1 ;
     }
     public void OnSpeedboost()
     {
