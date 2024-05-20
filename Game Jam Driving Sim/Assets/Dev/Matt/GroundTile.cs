@@ -21,7 +21,7 @@ public class GroundTile : MonoBehaviour
         {
             Debug.Log("Player has exited the tile");
             groundSpawn.Spawn();
-            Destroy(gameObject, 1f);
+            Destroy(gameObject, 3f);
             Debug.Log("Destroyed Tile after delay");
         }
         
