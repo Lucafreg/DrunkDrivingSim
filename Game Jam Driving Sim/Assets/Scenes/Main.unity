@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.4717871, g: 0.48842213, b: 0.5849056, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.025
+  m_FogDensity: 0.02
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: turnSpeed
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 1823194879051022962, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_Size.x
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 5854046978776208219, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_Height
       value: 0.4
@@ -223,13 +227,33 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 5854046978776208219, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6189137697097670454, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.315232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2341626
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.010999799
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 8289827205955972069, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_LocalPosition.x
