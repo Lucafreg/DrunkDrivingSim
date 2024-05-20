@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 481f1590f8644e2458a36bb513d09bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasHit: 0
   MoneySO: {fileID: 11400000, guid: 5f6bc99b5aa92e54c83a329074957e3c, type: 2}
 --- !u!1 &2477783352563216053
 GameObject:
@@ -162,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46560ba96ae294d4ca5429740da67639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 1.5
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &8450761337116861027
 GameObject:
@@ -208,7 +209,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6eb7dea0d45ea447ba6c3d0a1b0c811, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
