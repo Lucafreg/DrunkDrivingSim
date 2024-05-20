@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PeopleHItScript : MonoBehaviour
 {
+    public bool hasHit;
     [SerializeField]
     private MoneySO MoneySO;
     private void OnTriggerEnter(Collider other)
@@ -13,7 +14,12 @@ public class PeopleHItScript : MonoBehaviour
         {
 
             print("colided");
+            if (hasHit==false)
+            {
             MoneySO.MyScore+=1;
+                hasHit=true;
+            }
+            
 
         }
     }
