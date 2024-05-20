@@ -5554,7 +5554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Norbert '
+  m_text: Norbert Rodek
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2e6b578beeecd8489ecbdc6e0d00cda, type: 2}
   m_sharedMaterial: {fileID: 6653140438673412880, guid: a2e6b578beeecd8489ecbdc6e0d00cda, type: 2}
@@ -6767,6 +6767,8 @@ MonoBehaviour:
   PauseMenuUI: {fileID: 1581479101292951936}
   CreditsMenuUI: {fileID: 5827878008614407631}
   LoseMenuUI: {fileID: 4658571138269324884}
+  playerhealthSO: {fileID: 0}
+  speedSO: {fileID: 0}
   Resumed: 0
 --- !u!114 &4423163210010623670
 MonoBehaviour:
@@ -6785,6 +6787,8 @@ MonoBehaviour:
   ScoreGO: {fileID: 0}
   ScoreText: {fileID: 0}
   MoneySO: {fileID: 11400000, guid: 5f6bc99b5aa92e54c83a329074957e3c, type: 2}
+  SpeedSO: {fileID: 0}
+  playerhealthSO: {fileID: 0}
 --- !u!1 &7078933090685954872
 GameObject:
   m_ObjectHideFlags: 0
