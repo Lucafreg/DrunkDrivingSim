@@ -47,6 +47,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        PlayerHealthSlider.maxValue = playerhealthSO.MyMaxHealth;
         PlayerHealthSlider.value = playerhealthSO.MyCurrentHealth;
         
         if (Input.GetKeyDown(KeyCode.Escape))
