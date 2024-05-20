@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+
+
 [RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
+    [SerializeField]
+    private SpeedSO SpeedSO;
+
     private CharacterController controller;
     private Vector2 input;
     public float speed;
@@ -25,6 +31,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SpeedSO.MySpeed = SpeedSO.MyMaxSpeed;
+        speed = SpeedSO.MySpeed;
         Vector3 move = movement();
         controller.Move(move * speed * Time.deltaTime);
        

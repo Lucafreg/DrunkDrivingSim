@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private SpeedSO speedSO;
+    [SerializeField]
+    private MoneySO moneySo;
 
 
 

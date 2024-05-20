@@ -41,7 +41,7 @@ public class ScoreScript : MonoBehaviour
         if (MoneySO.MyScore > 0)
         {
             MoneySO.MyScore -= 50;
-            SpeedSO.MySpeed += 1;
+            SpeedSO.MyMaxSpeed += .2f;
             
         }
     }
