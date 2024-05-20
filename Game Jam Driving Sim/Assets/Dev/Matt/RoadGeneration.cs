@@ -10,6 +10,8 @@ public class RoadGeneration : MonoBehaviour
 {
     public GameObject[] RoadObstacles;
     public GameObject[] Characters;
+    public GameObject PowerUp;
+    public int PowerUpSpawnChance;
     public List<Transform> characterCrossingPoints;
     public int numberOfObstacles;
     public float minDistanceBetweenObjects;
@@ -50,6 +52,7 @@ public class RoadGeneration : MonoBehaviour
         for(int i = 0; i < characterCrossingPoints.Count;++i)
         {
             GameObject go = Instantiate(Characters[Random.Range(0, Characters.Length)], characterCrossingPoints[i].position, Quaternion.identity);
+            positions.Add(characterCrossingPoints[i].position);
             go.transform.SetParent(transform);
             S_NPC_Walk s_NPC_Walk = go.GetComponent<S_NPC_Walk>();
             if (characterCrossingPoints[i].position.x < transform.position.x)
@@ -64,6 +67,16 @@ public class RoadGeneration : MonoBehaviour
             }
 
         }
+        
+        int powerUpChance = Random.Range(0, 100);
+        if(powerUpChance < PowerUpSpawnChance)
+        {
+            Vector3 spawnPos = GeneratePosition();
+            GameObject go = Instantiate(PowerUp, spawnPos, Quaternion.identity);
+            positions.Add(spawnPos);
+            go.transform.SetParent(transform);
+        }
+
 
     }
 
