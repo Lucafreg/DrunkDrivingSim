@@ -503,6 +503,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2839219994825045413, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
+      propertyPath: moneySo
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f6bc99b5aa92e54c83a329074957e3c, type: 2}
+    - target: {fileID: 2839219994825045413, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
+      propertyPath: speedSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 43f0192e28097eb44a14134e11b8a80d, type: 2}
+    - target: {fileID: 2839219994825045413, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
       propertyPath: LoseMenuUI
       value: 
       objectReference: {fileID: 1452620867}
@@ -749,6 +757,8 @@ MonoBehaviour:
   ScoreGO: {fileID: 0}
   ScoreText: {fileID: 0}
   MoneySO: {fileID: 11400000, guid: 5f6bc99b5aa92e54c83a329074957e3c, type: 2}
+  SpeedSO: {fileID: 0}
+  playerhealthSO: {fileID: 0}
 --- !u!1 &1452620867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4658571138269324884, guid: b97c3122e815afd4195333f42277bbc3, type: 3}

@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 7906911186121833834}
   - component: {fileID: 8348102711002623591}
   - component: {fileID: 5127181427238251572}
+  - component: {fileID: 5522213334337273495}
   m_Layer: 0
   m_Name: MaleFleece
   m_TagString: Untagged
@@ -149,6 +150,20 @@ MonoBehaviour:
   manWalking: {fileID: 5646582348624291903}
   manRagdoll: {fileID: 6841846846928500948}
   hasHit: 0
+--- !u!114 &5522213334337273495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2477783352563216053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46560ba96ae294d4ca5429740da67639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
+  direction: {x: 0, y: 0, z: 0}
 --- !u!1 &8450761337116861027
 GameObject:
   m_ObjectHideFlags: 0

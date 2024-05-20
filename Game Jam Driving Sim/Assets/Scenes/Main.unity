@@ -1258,9 +1258,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4894836034974013548, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_Size.z
+      value: 7.695528
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894836034974013548, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: m_Center.z
+      value: 34.874138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: crossingZones
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
       propertyPath: numberOfObstacles
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: Characters.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: MaxNumberOfCharacters
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: 'Characters.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2477783352563216053, guid: 2d74d4b8b4c104547bb9b65deedd811e, type: 3}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: 'Characters.Array.data[1]'
+      value: 
+      objectReference: {fileID: 9210745566962021459, guid: 69c8f810dfaf1974eb4e1cc6e147eaf5, type: 3}
+    - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
+      propertyPath: RoadObstacles.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5062561423613129986, guid: b25331e54825754449d10725cb7f43cb, type: 3}
       propertyPath: minDistanceBetweenObjects

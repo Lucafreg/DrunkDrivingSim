@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class GroundTile : MonoBehaviour
@@ -19,8 +18,13 @@ public class GroundTile : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if(other.CompareTag("Player"))
-        groundSpawn.Spawn();
-        Destroy(gameObject, 2);
-        Debug.Log("Destroyed Tile");
+        {
+            Debug.Log("Player has exited the tile");
+            groundSpawn.Spawn();
+            Destroy(gameObject, 1f);
+            Debug.Log("Destroyed Tile after delay");
+        }
+        
+       
     }
 }

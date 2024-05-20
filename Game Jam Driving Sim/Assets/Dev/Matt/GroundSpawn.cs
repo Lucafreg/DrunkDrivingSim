@@ -8,7 +8,7 @@ public class GroundSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      for(int i = 0; i < 3; i++)
+      for(int i = 0; i < 2; i++)
        {
         Spawn();
       }
@@ -20,7 +20,7 @@ public class GroundSpawn : MonoBehaviour
       GameObject tmp = Instantiate(ground, nextSpawnPoint, Quaternion.identity);
       Vector3 childPos = tmp.transform.GetChild(0).GetChild(8).transform.position;
         nextSpawnPoint = new Vector3(nextSpawnPoint.x,nextSpawnPoint.y,childPos.z);
-        //Debug.Log(nextSpawnPoint);
+        Debug.Log("RUNNING SPAWN CODE");
     }
   
 }
