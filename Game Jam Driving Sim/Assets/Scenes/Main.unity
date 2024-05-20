@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.13207549
       objectReference: {fileID: 0}
+    - target: {fileID: 2839219994825045413, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
+      propertyPath: playerhealthSO
+      value: 
+      objectReference: {fileID: 11400000, guid: de17747ace8b10241a4719cdfb59de77, type: 2}
     - target: {fileID: 3232752959362269842, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -624,6 +628,10 @@ PrefabInstance:
     - target: {fileID: 4443338751472630623, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ScoreScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5678943124717829879, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5827878008614407631, guid: b97c3122e815afd4195333f42277bbc3, type: 3}
       propertyPath: m_IsActive

@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerHealthSlider.value = playerhealthSO.MyCurrentHealth;
         
