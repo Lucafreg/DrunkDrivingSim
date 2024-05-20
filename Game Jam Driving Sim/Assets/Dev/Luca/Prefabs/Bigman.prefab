@@ -1443,16 +1443,28 @@ PrefabInstance:
       value: Blood particles
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSizeZ.scalar
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -1460,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 50
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSizeY.minScalar
@@ -1472,7 +1484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
@@ -1481,6 +1493,14 @@ PrefabInstance:
     - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: InitialModule.startSizeZ.minMaxState
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.536054
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374812770046967812, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 0.8667091
       objectReference: {fileID: 0}
     - target: {fileID: 7702127326616601881, guid: 0e9586a05538edc458d8f200956cf04e, type: 3}
       propertyPath: m_LocalScale.x
