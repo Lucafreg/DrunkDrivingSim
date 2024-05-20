@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 79d4aea515cd4b84e9fcc8ffb65ed3a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/zac test.unity
     guid: 7372804e1fc0606478c268e3cfeaf645
   m_configObjects: {}
