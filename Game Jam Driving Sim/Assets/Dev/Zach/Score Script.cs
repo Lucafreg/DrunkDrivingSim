@@ -40,8 +40,8 @@ public class ScoreScript : MonoBehaviour
     {
         if (MoneySO.MyScore > 0)
         {
-            MoneySO.MyScore -= 50;
-            SpeedSO.MyMaxSpeed += .2f;
+            MoneySO.MyScore -= 20;
+            SpeedSO.MyMaxSpeed += .5f;
             
         }
     }
@@ -49,7 +49,7 @@ public class ScoreScript : MonoBehaviour
     {
         if(MoneySO.MyScore > 0)
         {
-        MoneySO.MyScore -= 100;
+        MoneySO.MyScore -= 30;
             playerhealthSO.MyMaxHealth += 1;
         }
         

@@ -2923,7 +2923,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -100
+  m_text: '-30
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a2e6b578beeecd8489ecbdc6e0d00cda, type: 2}
   m_sharedMaterial: {fileID: 6653140438673412880, guid: a2e6b578beeecd8489ecbdc6e0d00cda, type: 2}
@@ -6769,6 +6771,7 @@ MonoBehaviour:
   LoseMenuUI: {fileID: 4658571138269324884}
   playerhealthSO: {fileID: 0}
   speedSO: {fileID: 0}
+  moneySo: {fileID: 0}
   Resumed: 0
 --- !u!114 &4423163210010623670
 MonoBehaviour:
