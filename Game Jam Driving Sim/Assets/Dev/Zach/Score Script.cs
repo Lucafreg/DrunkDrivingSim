@@ -21,7 +21,7 @@ public class ScoreScript : MonoBehaviour
         ScoreText=ScoreGO.GetComponent<TextMeshProUGUI>();
         
     }
-    private void FixedUpdate()
+    private void Update()
     {
         
         ScoreText.text = ("Money- "+ MoneySO.MyScore);
