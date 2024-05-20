@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &983803085175076836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7111452147585365837}
+  m_Layer: 3
+  m_Name: CrossingPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7111452147585365837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983803085175076836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.66, y: -1.09, z: 34.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6066281758879554845}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2727570766178200463
 GameObject:
   m_ObjectHideFlags: 0
@@ -30,6 +61,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3867806709410501355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3577784578786146568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8152362043397894602}
+  m_Layer: 3
+  m_Name: CrossingPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8152362043397894602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3577784578786146568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.22, y: -1.04, z: 26.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6066281758879554845}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4276118454079614758
 GameObject:
@@ -244,6 +306,9 @@ Transform:
   - {fileID: 1843346256472862387}
   - {fileID: 917032398090620849}
   - {fileID: 7652954234316468452}
+  - {fileID: 559352844763267597}
+  - {fileID: 7111452147585365837}
+  - {fileID: 8152362043397894602}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5062561423613129986
@@ -261,10 +326,14 @@ MonoBehaviour:
   RoadObstacles:
   - {fileID: 3556987736455133963, guid: 28af2dad9ba705c4cbe1b186759cbbda, type: 3}
   - {fileID: 6377698145347334696, guid: 01688d6c5b91cad419483ac7c6a7335c, type: 3}
-  - {fileID: 2477783352563216053, guid: 2d74d4b8b4c104547bb9b65deedd811e, type: 3}
+  Characters:
   - {fileID: 9210745566962021459, guid: 69c8f810dfaf1974eb4e1cc6e147eaf5, type: 3}
-  - {fileID: 2381925961414970280, guid: a5bff873c66cc47479873e7437e30840, type: 3}
-  numberOfObstacles: 6
+  - {fileID: 2477783352563216053, guid: 2d74d4b8b4c104547bb9b65deedd811e, type: 3}
+  characterCrossingPoints:
+  - {fileID: 559352844763267597}
+  - {fileID: 7111452147585365837}
+  - {fileID: 8152362043397894602}
+  numberOfObstacles: 3
   minDistanceBetweenObjects: 2
   roadLength: 30
 --- !u!114 &3495897796401244490
@@ -298,8 +367,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 16.532328, y: 10, z: 10}
-  m_Center: {x: 0.460433, y: 0.14189816, z: 31.788101}
+  m_Size: {x: 15.341619, y: 3.7225363, z: 10}
+  m_Center: {x: 0.8265691, y: 0.46212852, z: 31.788101}
 --- !u!1 &8445729768763597479
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +422,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8521533557606059693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559352844763267597}
+  m_Layer: 3
+  m_Name: CrossingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559352844763267597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521533557606059693}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.79, y: -1.04, z: 3.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6066281758879554845}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &106573351670877514
 PrefabInstance:
   m_ObjectHideFlags: 0

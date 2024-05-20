@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -8,6 +9,8 @@ using UnityEngine;
 public class RoadGeneration : MonoBehaviour
 {
     public GameObject[] RoadObstacles;
+    public GameObject[] Characters;
+    public List<Transform> characterCrossingPoints;
     public int numberOfObstacles;
     public float minDistanceBetweenObjects;
     public float roadLength;
@@ -43,6 +46,25 @@ public class RoadGeneration : MonoBehaviour
 
             
         }
+        
+        for(int i = 0; i < characterCrossingPoints.Count;++i)
+        {
+            GameObject go = Instantiate(Characters[Random.Range(0, Characters.Length)], characterCrossingPoints[i].position, Quaternion.identity);
+            go.transform.SetParent(transform);
+            S_NPC_Walk s_NPC_Walk = go.GetComponent<S_NPC_Walk>();
+            if (characterCrossingPoints[i].position.x < transform.position.x)
+            {
+                
+                s_NPC_Walk.direction = Vector3.right;
+            }
+            else if (characterCrossingPoints[i].position.x > transform.position.x)
+            { 
+                s_NPC_Walk.direction = Vector3.left;
+
+            }
+
+        }
+
     }
 
     public Vector3 GeneratePosition()
@@ -59,6 +81,7 @@ public class RoadGeneration : MonoBehaviour
         
         return spawnPos;
     }
-   
+
+    
    
 }

@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 9171916256953775278}
   - component: {fileID: 4885179893970613757}
   - component: {fileID: 2668856008942819117}
+  - component: {fileID: 3643873561898790223}
   m_Layer: 0
   m_Name: Bigman
   m_TagString: Untagged
@@ -277,6 +278,20 @@ MonoBehaviour:
   manWalking: {fileID: 5950894222001848749}
   manRagdoll: {fileID: 2866648477706026519}
   hasHit: 0
+--- !u!114 &3643873561898790223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9210745566962021459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46560ba96ae294d4ca5429740da67639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.2
+  direction: {x: 0, y: 0, z: 0}
 --- !u!1001 &4714283447289956673
 PrefabInstance:
   m_ObjectHideFlags: 0
