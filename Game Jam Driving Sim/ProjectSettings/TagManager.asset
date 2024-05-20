@@ -6,6 +6,9 @@ TagManager:
   tags:
   - UIManager
   - PlayerHealthUI
+  - Player score
+  - Player Money
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -13,8 +16,8 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
+  - PostProcessing
+  - SideWallCollision
   - 
   - 
   - 
