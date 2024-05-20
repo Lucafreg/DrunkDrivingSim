@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e659bd5462f983c4d88718f6abffd202, type: 3}
   m_Name: Speed
   m_EditorClassIdentifier: 
-  playerspeed: 33
-  playerMaxspeed: 33
+  playerspeed: 15
+  playerMaxspeed: 15
