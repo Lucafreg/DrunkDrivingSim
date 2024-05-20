@@ -8,6 +8,7 @@ TagManager:
   - PlayerHealthUI
   - Player score
   - Player Money
+  - NPC
   layers:
   - Default
   - TransparentFX
