@@ -211,9 +211,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 742725870033823637, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: turnSpeed
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854046978776208219, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_Height
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5854046978776208219, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_Radius
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 6189137697097670454, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_Name
       value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470253794654810994, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.010999799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289827205955972069, guid: 6c63ca97653cef5408509f869849c514, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 8710705180453449185, guid: 6c63ca97653cef5408509f869849c514, type: 3}
       propertyPath: m_LocalPosition.x
@@ -367,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 923591360}
-  offset: {x: -0.4, y: 3, z: -5}
+  offset: {x: 0, y: 2.75, z: -5}
   smoothDelta: 1
 --- !u!114 &615585890
 MonoBehaviour:
